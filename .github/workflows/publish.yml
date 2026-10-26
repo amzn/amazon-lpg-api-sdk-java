@@ -94,9 +94,10 @@ jobs:
         run: |
           set -euo pipefail
           EXTRA=()
-          # central-publishing-maven-plugin 0.7.0 binds its skipPublishing parameter to the
-          # user property ${skipPublishing}: the bundle is still built, the upload is skipped.
-          if [ "$DRY_RUN" = "true" ]; then EXTRA+=(-DskipPublishing=true); fi
+          # central-publishing-maven-plugin 0.12.0 binds its skipUpload parameter to the user
+          # property ${skipUpload}: the bundle is still built, nothing is uploaded. (In 0.12.0,
+          # skipPublishing leaves the artifact out, so no bundle would be built.)
+          if [ "$DRY_RUN" = "true" ]; then EXTRA+=(-DskipUpload=true); fi
           mvn -B -ntp -P release "${EXTRA[@]}" deploy
 
       - name: Keep bundle as workflow artifact
