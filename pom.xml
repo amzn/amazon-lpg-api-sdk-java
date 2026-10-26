@@ -44,7 +44,7 @@
         <!-- Filled in by jacoco:prepare-agent; empty when JaCoCo is skipped. -->
         <argLine></argLine>
 
-        <google-http-client.version>1.47.1</google-http-client.version>
+        <google-http-client.version>2.2.0</google-http-client.version>
         <jackson-core.version>2.18.12</jackson-core.version>
         <guava.version>33.7.2-jre</guava.version>
         <commons-codec.version>1.22.1</commons-codec.version>
