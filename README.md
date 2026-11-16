@@ -1025,3 +1025,4 @@ Apache-2.0. See [LICENSE](LICENSE).
 ## Security
 
 Report vulnerabilities via https://aws.amazon.com/security/vulnerability-reporting/
+.
