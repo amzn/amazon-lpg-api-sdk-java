@@ -1025,3 +1025,5 @@ Apache-2.0. See [LICENSE](LICENSE).
 ## Security
 
 Report vulnerabilities via https://aws.amazon.com/security/vulnerability-reporting/
+
+Demo of scripts/release-pr.sh (test PR, will be closed).
